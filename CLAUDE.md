@@ -23,10 +23,11 @@ Semantic tokens map to shadcn CSS variable names (--primary, --background, --acc
 ## Color Token Groups
 
 - color.brand.black/white — Absolute black/white
-- color.accent.* — Brand accent color (50–500 scale)
-- color.neutral.* — Neutral grays (50–900 scale)
-- color.extended.* — Semantic status colors (red, orange, yellow, green, purple, blue)
-- color.overlay.* — Transparent black overlays
+- color.accent.* — Marsh Blue scale (250/500/750/1000)
+- color.neutral.* — Warm grays (250/500/750/1000)
+- color.extended.gold/green/purple.* — Extended scales (250/500/750/1000)
+- color.extended.red/yellow/success — Status flat colors
+- color.overlay.* — Midnight Blue overlays (light/medium/heavy)
 
 ## Figma Connection
 
@@ -52,9 +53,9 @@ Brand-specific patterns (global nav, global footer, media components, etc.) live
 
 ## Current Project
 
-- Brand: [Brand Name]
-- System name: [System Name]
-- Figma file key: [update .component-contracts]
+- Brand: Marsh
+- System name: marsh-ds
+- Figma file key: lF6B0TIXk0XT4BqLOA2QJg
 - Repo: [GitHub repo URL]
 - Docs site: [Vercel URL]
 

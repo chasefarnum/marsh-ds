@@ -1,5 +1,5 @@
 {
-  "figmaFileKey": "REPLACE_WITH_YOUR_FIGMA_FILE_KEY",
+  "figmaFileKey": "lF6B0TIXk0XT4BqLOA2QJg",
   "tokensDir": "tokens",
   "contractsDir": "contracts",
   "primitivesGlob": "tokens/primitive/**/*.tokens.json",
@@ -7,6 +7,6 @@
     "light": "tokens/semantic/light.tokens.json",
     "dark":  "tokens/semantic/dark.tokens.json"
   },
-  "brand": "REPLACE_WITH_BRAND_SLUG",
+  "brand": "marsh",
   "componentSourceDir": "src/components/ui"
 }

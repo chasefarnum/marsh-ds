@@ -1,8 +1,8 @@
 {
   "fontFamily": {
-    "sans":  { "$type": "fontFamily", "$value": ["REPLACE_SANS_FONT", "Helvetica Neue", "sans-serif"] },
-    "serif": { "$type": "fontFamily", "$value": ["REPLACE_SERIF_FONT", "Georgia", "serif"] },
-    "mono":  { "$type": "fontFamily", "$value": ["REPLACE_MONO_FONT", "monospace"] }
+    "sans":  { "$type": "fontFamily", "$value": ["Noto Sans", "Helvetica Neue", "sans-serif"] },
+    "serif": { "$type": "fontFamily", "$value": ["Marsh Serif", "Georgia Pro Light Serif", "Georgia", "serif"] },
+    "mono":  { "$type": "fontFamily", "$value": ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"] }
   },
   "fontSize": {
     "xs":   { "$type": "dimension", "$value": "12px" },

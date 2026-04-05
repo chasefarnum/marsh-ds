@@ -2,6 +2,22 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Marsh Serif — custom brand typeface */
+@font-face {
+  font-family: 'Marsh Serif';
+  src: url('/fonts/MarshSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marsh Serif';
+  src: url('/fonts/MarshSerif-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Design token layer — AUTO-GENERATED from tokens/ JSON files.
    Edit tokens/*.tokens.json files, then run: npm run tokens:build */
 @import "./generated/semantic-light.css";
