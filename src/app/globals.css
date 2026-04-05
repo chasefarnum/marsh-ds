@@ -98,10 +98,10 @@
   --color-overlay-medium: rgba(0, 0, 0, 0.5);
   --color-overlay-heavy: rgba(0, 0, 0, 0.73);
 
-  /* --- Fonts (replace REPLACE_*_FONT with actual font vars when branding) --- */
-  --font-sans: 'Helvetica Neue', sans-serif;
-  --font-serif: 'Georgia', serif;
-  --font-mono: monospace;
+  /* --- Fonts --- */
+  --font-sans: var(--font-noto-sans), 'Helvetica Neue', sans-serif;
+  --font-serif: 'Marsh Serif', 'Georgia Pro Light Serif', Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* --- Radius (brand = sharp, 2px everywhere) --- */
   --radius: 0.125rem;
