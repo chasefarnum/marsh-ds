@@ -1,0 +1,32 @@
+{
+  "name": "Drawer",
+  "source": "src/components/ui/drawer.tsx",
+  "primitive": "native",
+  "description": "Slide-out panel overlay using vaul drawer primitive with directional support",
+  "variants": {},
+  "slots": [
+    "drawer",
+    "drawer-trigger",
+    "drawer-portal",
+    "drawer-close",
+    "drawer-overlay",
+    "drawer-content",
+    "drawer-header",
+    "drawer-footer",
+    "drawer-title",
+    "drawer-description"
+  ],
+  "tokens": {
+    "overlay-background": "var(--black)",
+    "content-background": "var(--popover)",
+    "content-foreground": "var(--popover-foreground)",
+    "handle-background": "var(--muted)",
+    "title-foreground": "var(--foreground)",
+    "description-foreground": "var(--muted-foreground)"
+  },
+  "states": [
+    "data-open",
+    "data-closed",
+    "data-vaul-drawer-direction"
+  ]
+}

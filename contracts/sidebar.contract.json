@@ -1,0 +1,54 @@
+{
+  "name": "Sidebar",
+  "source": "src/components/ui/sidebar.tsx",
+  "primitive": "base-ui",
+  "description": "Collapsible sidebar navigation with menu items, groups, sub-menus, and mobile sheet support",
+  "variants": {
+    "variant": {
+      "options": ["default", "outline"],
+      "default": "default"
+    },
+    "size": {
+      "options": ["default", "sm", "lg"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "sidebar-wrapper",
+    "sidebar",
+    "sidebar-trigger",
+    "sidebar-rail",
+    "sidebar-inset",
+    "sidebar-input",
+    "sidebar-header",
+    "sidebar-footer",
+    "sidebar-separator",
+    "sidebar-content",
+    "sidebar-group",
+    "sidebar-group-label",
+    "sidebar-group-action",
+    "sidebar-group-content",
+    "sidebar-menu",
+    "sidebar-menu-item",
+    "sidebar-menu-button",
+    "sidebar-menu-action",
+    "sidebar-menu-badge",
+    "sidebar-menu-skeleton",
+    "sidebar-menu-sub",
+    "sidebar-menu-sub-item",
+    "sidebar-menu-sub-button",
+    "sidebar-gap",
+    "sidebar-container",
+    "sidebar-inner"
+  ],
+  "tokens": {
+    "sidebar": "var(--sidebar)",
+    "sidebar-foreground": "var(--sidebar-foreground)",
+    "sidebar-border": "var(--sidebar-border)",
+    "sidebar-accent": "var(--sidebar-accent)",
+    "sidebar-accent-foreground": "var(--sidebar-accent-foreground)",
+    "sidebar-ring": "var(--sidebar-ring)",
+    "background": "var(--background)"
+  },
+  "states": ["hover", "focus-visible", "active", "disabled", "aria-disabled", "aria-expanded", "data-active", "data-open"]
+}

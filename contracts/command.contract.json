@@ -1,0 +1,33 @@
+{
+  "name": "Command",
+  "source": "src/components/ui/command.tsx",
+  "primitive": "native",
+  "description": "Command palette with searchable list, keyboard navigation, and optional dialog wrapper",
+  "variants": {},
+  "slots": [
+    "command",
+    "command-input-wrapper",
+    "command-input",
+    "command-list",
+    "command-empty",
+    "command-group",
+    "command-separator",
+    "command-item",
+    "command-shortcut"
+  ],
+  "tokens": {
+    "popover": "var(--popover)",
+    "popover-foreground": "var(--popover-foreground)",
+    "input": "var(--input)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)",
+    "foreground": "var(--foreground)",
+    "border": "var(--border)"
+  },
+  "states": [
+    "disabled",
+    "data-disabled",
+    "data-selected",
+    "data-checked"
+  ]
+}

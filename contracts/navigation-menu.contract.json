@@ -1,0 +1,37 @@
+{
+  "name": "NavigationMenu",
+  "source": "src/components/ui/navigation-menu.tsx",
+  "primitive": "base-ui",
+  "description": "Horizontal navigation with dropdown content panels, links, and viewport positioning",
+  "variants": {},
+  "slots": [
+    "navigation-menu",
+    "navigation-menu-list",
+    "navigation-menu-item",
+    "navigation-menu-trigger",
+    "navigation-menu-content",
+    "navigation-menu-link",
+    "navigation-menu-indicator"
+  ],
+  "tokens": {
+    "trigger-hover-background": "var(--muted)",
+    "trigger-focus-ring": "var(--ring)",
+    "content-background": "var(--popover)",
+    "content-foreground": "var(--popover-foreground)",
+    "content-ring": "var(--foreground)",
+    "link-active-background": "var(--muted)",
+    "indicator-background": "var(--border)"
+  },
+  "states": [
+    "hover",
+    "focus",
+    "focus-visible",
+    "disabled",
+    "data-open",
+    "data-closed",
+    "data-popup-open",
+    "data-active",
+    "data-activation-direction",
+    "data-motion"
+  ]
+}

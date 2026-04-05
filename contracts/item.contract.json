@@ -1,0 +1,47 @@
+{
+  "name": "Item",
+  "source": "src/components/ui/item.tsx",
+  "primitive": "base-ui",
+  "description": "Flexible list item with media, content, title, description, and action slots",
+  "variants": {
+    "variant": {
+      "options": ["default", "outline", "muted"],
+      "default": "default"
+    },
+    "size": {
+      "options": ["default", "sm", "xs"],
+      "default": "default"
+    },
+    "mediaVariant": {
+      "options": ["default", "icon", "image"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "item",
+    "item-group",
+    "item-separator",
+    "item-media",
+    "item-content",
+    "item-title",
+    "item-description",
+    "item-actions",
+    "item-header",
+    "item-footer"
+  ],
+  "tokens": {
+    "outline-border": "var(--border)",
+    "muted-background": "var(--muted)",
+    "description-foreground": "var(--muted-foreground)",
+    "link-color": "var(--primary)",
+    "focus-ring": "var(--ring)",
+    "focus-border": "var(--ring)",
+    "hover-background": "var(--muted)"
+  },
+  "states": [
+    "focus-visible",
+    "hover",
+    "data-variant",
+    "data-size"
+  ]
+}

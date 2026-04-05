@@ -1,0 +1,32 @@
+{
+  "name": "NativeSelect",
+  "source": "src/components/ui/native-select.tsx",
+  "primitive": "native",
+  "description": "Native HTML select element with custom styling and chevron icon",
+  "variants": {},
+  "slots": [
+    "native-select-wrapper",
+    "native-select",
+    "native-select-icon",
+    "native-select-option",
+    "native-select-optgroup"
+  ],
+  "tokens": {
+    "border": "var(--input)",
+    "selection-background": "var(--primary)",
+    "selection-foreground": "var(--primary-foreground)",
+    "placeholder-foreground": "var(--muted-foreground)",
+    "focus-border": "var(--ring)",
+    "focus-ring": "var(--ring)",
+    "icon-foreground": "var(--muted-foreground)",
+    "invalid-border": "var(--destructive)",
+    "invalid-ring": "var(--destructive)"
+  },
+  "states": [
+    "focus-visible",
+    "disabled",
+    "aria-invalid",
+    "hover",
+    "data-size"
+  ]
+}

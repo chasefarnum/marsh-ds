@@ -1,0 +1,12 @@
+{
+  "name": "Separator",
+  "source": "src/components/ui/separator.tsx",
+  "primitive": "base-ui",
+  "description": "Visual divider for separating content horizontally or vertically",
+  "variants": {},
+  "slots": ["separator"],
+  "tokens": {
+    "border": "var(--border)"
+  },
+  "states": []
+}

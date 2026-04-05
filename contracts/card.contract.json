@@ -1,0 +1,29 @@
+{
+  "name": "Card",
+  "source": "src/components/ui/card.tsx",
+  "primitive": "native",
+  "description": "Container component for grouping related content with header, body, and footer sections",
+  "variants": {
+    "size": {
+      "options": ["default", "sm"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "card",
+    "card-header",
+    "card-title",
+    "card-description",
+    "card-action",
+    "card-content",
+    "card-footer"
+  ],
+  "tokens": {
+    "card": "var(--card)",
+    "card-foreground": "var(--card-foreground)",
+    "foreground": "var(--foreground)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)"
+  },
+  "states": []
+}

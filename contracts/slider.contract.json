@@ -1,0 +1,14 @@
+{
+  "name": "Slider",
+  "source": "src/components/ui/slider.tsx",
+  "primitive": "base-ui",
+  "description": "Range input slider with track, indicator, and draggable thumb(s)",
+  "variants": {},
+  "slots": ["slider", "slider-track", "slider-range", "slider-thumb"],
+  "tokens": {
+    "muted": "var(--muted)",
+    "primary": "var(--primary)",
+    "ring": "var(--ring)"
+  },
+  "states": ["hover", "focus-visible", "active", "disabled"]
+}

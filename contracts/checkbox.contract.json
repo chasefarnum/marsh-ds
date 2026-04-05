@@ -1,0 +1,25 @@
+{
+  "name": "Checkbox",
+  "source": "src/components/ui/checkbox.tsx",
+  "primitive": "base-ui",
+  "description": "Toggle checkbox input with check indicator and validation states",
+  "variants": {},
+  "slots": [
+    "checkbox",
+    "checkbox-indicator"
+  ],
+  "tokens": {
+    "input": "var(--input)",
+    "ring": "var(--ring)",
+    "destructive": "var(--destructive)",
+    "primary": "var(--primary)",
+    "primary-foreground": "var(--primary-foreground)"
+  },
+  "states": [
+    "hover",
+    "focus-visible",
+    "disabled",
+    "aria-invalid",
+    "data-checked"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Alert",
+  "source": "src/components/ui/alert.tsx",
+  "primitive": "native",
+  "description": "Contextual feedback messages with variant-based color schemes and optional action slot",
+  "variants": {
+    "variant": {
+      "options": ["default", "destructive", "warning", "success", "info"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "alert",
+    "alert-title",
+    "alert-description",
+    "alert-action"
+  ],
+  "tokens": {
+    "card": "var(--card)",
+    "card-foreground": "var(--card-foreground)",
+    "destructive": "var(--destructive)",
+    "destructive-foreground": "var(--destructive-foreground)",
+    "warning": "var(--warning)",
+    "warning-foreground": "var(--warning-foreground)",
+    "success": "var(--success)",
+    "success-foreground": "var(--success-foreground)",
+    "info": "var(--info)",
+    "info-foreground": "var(--info-foreground)",
+    "muted-foreground": "var(--muted-foreground)",
+    "foreground": "var(--foreground)"
+  },
+  "states": []
+}

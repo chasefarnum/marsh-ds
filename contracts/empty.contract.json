@@ -1,0 +1,29 @@
+{
+  "name": "Empty",
+  "source": "src/components/ui/empty.tsx",
+  "primitive": "native",
+  "description": "Empty state placeholder with icon, title, description, and action content",
+  "variants": {
+    "variant": {
+      "options": ["default", "icon"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "empty",
+    "empty-header",
+    "empty-icon",
+    "empty-title",
+    "empty-description",
+    "empty-content"
+  ],
+  "tokens": {
+    "icon-background": "var(--muted)",
+    "icon-foreground": "var(--foreground)",
+    "description-foreground": "var(--muted-foreground)",
+    "link-color": "var(--primary)"
+  },
+  "states": [
+    "hover"
+  ]
+}

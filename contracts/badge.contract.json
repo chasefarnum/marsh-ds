@@ -1,0 +1,32 @@
+{
+  "name": "Badge",
+  "source": "src/components/ui/badge.tsx",
+  "primitive": "base-ui",
+  "description": "Compact label for status, categories, or counts with multiple visual variants",
+  "variants": {
+    "variant": {
+      "options": ["default", "secondary", "destructive", "outline", "ghost", "link"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "badge"
+  ],
+  "tokens": {
+    "primary": "var(--primary)",
+    "primary-foreground": "var(--primary-foreground)",
+    "secondary": "var(--secondary)",
+    "secondary-foreground": "var(--secondary-foreground)",
+    "destructive": "var(--destructive)",
+    "border": "var(--border)",
+    "foreground": "var(--foreground)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)",
+    "ring": "var(--ring)"
+  },
+  "states": [
+    "hover",
+    "focus-visible",
+    "aria-invalid"
+  ]
+}

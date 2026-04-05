@@ -1,0 +1,16 @@
+{
+  "name": "Chart",
+  "source": "src/components/ui/chart.tsx",
+  "primitive": "native",
+  "description": "Recharts-based chart container with themed tooltip, legend, and dynamic color configuration",
+  "variants": {},
+  "slots": ["chart"],
+  "tokens": {
+    "muted-foreground": "var(--muted-foreground)",
+    "muted": "var(--muted)",
+    "border": "var(--border)",
+    "background": "var(--background)",
+    "foreground": "var(--foreground)"
+  },
+  "states": []
+}

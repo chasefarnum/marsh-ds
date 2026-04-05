@@ -1,0 +1,25 @@
+{
+  "name": "Toggle",
+  "source": "src/components/ui/toggle.tsx",
+  "primitive": "base-ui",
+  "description": "Pressable toggle button with on/off state, variant styles, and size options",
+  "variants": {
+    "variant": {
+      "options": ["default", "outline"],
+      "default": "default"
+    },
+    "size": {
+      "options": ["default", "sm", "lg"],
+      "default": "default"
+    }
+  },
+  "slots": ["toggle"],
+  "tokens": {
+    "muted": "var(--muted)",
+    "foreground": "var(--foreground)",
+    "ring": "var(--ring)",
+    "input": "var(--input)",
+    "destructive": "var(--destructive)"
+  },
+  "states": ["hover", "focus-visible", "disabled", "aria-invalid", "aria-pressed", "data-state-on"]
+}

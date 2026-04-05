@@ -1,0 +1,25 @@
+{
+  "name": "Breadcrumb",
+  "source": "src/components/ui/breadcrumb.tsx",
+  "primitive": "base-ui",
+  "description": "Navigation breadcrumb trail with links, separators, and ellipsis overflow",
+  "variants": {},
+  "slots": [
+    "breadcrumb",
+    "breadcrumb-list",
+    "breadcrumb-item",
+    "breadcrumb-link",
+    "breadcrumb-page",
+    "breadcrumb-separator",
+    "breadcrumb-ellipsis"
+  ],
+  "tokens": {
+    "muted-foreground": "var(--muted-foreground)",
+    "foreground": "var(--foreground)"
+  },
+  "states": [
+    "hover",
+    "aria-disabled",
+    "aria-current"
+  ]
+}

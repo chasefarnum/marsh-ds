@@ -1,0 +1,40 @@
+{
+  "name": "Button",
+  "source": "src/components/ui/button.tsx",
+  "primitive": "base-ui",
+  "description": "Interactive button with multiple visual variants and size options",
+  "variants": {
+    "variant": {
+      "options": ["default", "outline", "secondary", "ghost", "destructive", "link"],
+      "default": "default"
+    },
+    "size": {
+      "options": ["default", "xs", "sm", "lg", "xl", "icon", "icon-xs", "icon-sm", "icon-lg"],
+      "default": "default"
+    }
+  },
+  "slots": [
+    "button"
+  ],
+  "tokens": {
+    "primary": "var(--primary)",
+    "primary-foreground": "var(--primary-foreground)",
+    "border": "var(--border)",
+    "background": "var(--background)",
+    "muted": "var(--muted)",
+    "foreground": "var(--foreground)",
+    "input": "var(--input)",
+    "secondary": "var(--secondary)",
+    "secondary-foreground": "var(--secondary-foreground)",
+    "destructive": "var(--destructive)",
+    "ring": "var(--ring)"
+  },
+  "states": [
+    "hover",
+    "focus-visible",
+    "active",
+    "disabled",
+    "aria-expanded",
+    "aria-invalid"
+  ]
+}

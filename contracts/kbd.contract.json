@@ -1,0 +1,17 @@
+{
+  "name": "Kbd",
+  "source": "src/components/ui/kbd.tsx",
+  "primitive": "native",
+  "description": "Keyboard shortcut badge for displaying key combinations",
+  "variants": {},
+  "slots": [
+    "kbd",
+    "kbd-group"
+  ],
+  "tokens": {
+    "background": "var(--muted)",
+    "foreground": "var(--muted-foreground)",
+    "tooltip-background": "var(--background)"
+  },
+  "states": []
+}

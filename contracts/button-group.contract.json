@@ -1,0 +1,24 @@
+{
+  "name": "ButtonGroup",
+  "source": "src/components/ui/button-group.tsx",
+  "primitive": "base-ui",
+  "description": "Groups buttons, inputs, and separators into a single visually connected unit",
+  "variants": {
+    "orientation": {
+      "options": ["horizontal", "vertical"],
+      "default": "horizontal"
+    }
+  },
+  "slots": [
+    "button-group",
+    "button-group-text",
+    "button-group-separator"
+  ],
+  "tokens": {
+    "muted": "var(--muted)",
+    "input": "var(--input)"
+  },
+  "states": [
+    "focus-visible"
+  ]
+}

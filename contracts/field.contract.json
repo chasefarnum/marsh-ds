@@ -1,0 +1,39 @@
+{
+  "name": "Field",
+  "source": "src/components/ui/field.tsx",
+  "primitive": "native",
+  "description": "Form field layout system with label, description, error, and orientation variants",
+  "variants": {
+    "orientation": {
+      "options": ["vertical", "horizontal", "responsive"],
+      "default": "vertical"
+    }
+  },
+  "slots": [
+    "field-set",
+    "field-legend",
+    "field-group",
+    "field",
+    "field-content",
+    "field-label",
+    "field-description",
+    "field-separator",
+    "field-separator-content",
+    "field-error"
+  ],
+  "tokens": {
+    "error-foreground": "var(--destructive)",
+    "description-foreground": "var(--muted-foreground)",
+    "separator-background": "var(--background)",
+    "label-checked-border": "var(--primary)",
+    "label-checked-background": "var(--primary)",
+    "link-color": "var(--primary)"
+  },
+  "states": [
+    "data-invalid",
+    "data-disabled",
+    "data-checked",
+    "data-variant",
+    "data-orientation"
+  ]
+}

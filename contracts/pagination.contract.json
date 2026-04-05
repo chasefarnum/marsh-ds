@@ -1,0 +1,19 @@
+{
+  "name": "Pagination",
+  "source": "src/components/ui/pagination.tsx",
+  "primitive": "native",
+  "description": "Page navigation with numbered links, previous/next buttons, and ellipsis indicator",
+  "variants": {},
+  "slots": [
+    "pagination",
+    "pagination-content",
+    "pagination-item",
+    "pagination-link",
+    "pagination-ellipsis"
+  ],
+  "tokens": {},
+  "states": [
+    "aria-current",
+    "data-active"
+  ]
+}

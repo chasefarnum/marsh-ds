@@ -1,0 +1,32 @@
+{
+  "name": "Calendar",
+  "source": "src/components/ui/calendar.tsx",
+  "primitive": "native",
+  "description": "Date picker calendar built on react-day-picker with range selection and dropdown navigation",
+  "variants": {},
+  "slots": [
+    "calendar"
+  ],
+  "tokens": {
+    "border": "var(--border)",
+    "background": "var(--background)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)",
+    "foreground": "var(--foreground)",
+    "primary": "var(--primary)",
+    "primary-foreground": "var(--primary-foreground)",
+    "popover": "var(--popover)",
+    "ring": "var(--ring)"
+  },
+  "states": [
+    "hover",
+    "focus-visible",
+    "disabled",
+    "aria-disabled",
+    "aria-selected",
+    "data-selected",
+    "data-range-start",
+    "data-range-end",
+    "data-range-middle"
+  ]
+}

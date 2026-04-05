@@ -1,0 +1,42 @@
+{
+  "name": "ContextMenu",
+  "source": "src/components/ui/context-menu.tsx",
+  "primitive": "base-ui",
+  "description": "Right-click context menu with items, submenus, checkboxes, radio items, and keyboard shortcuts",
+  "variants": {},
+  "slots": [
+    "context-menu",
+    "context-menu-portal",
+    "context-menu-trigger",
+    "context-menu-content",
+    "context-menu-group",
+    "context-menu-label",
+    "context-menu-item",
+    "context-menu-sub",
+    "context-menu-sub-trigger",
+    "context-menu-sub-content",
+    "context-menu-checkbox-item",
+    "context-menu-radio-group",
+    "context-menu-radio-item",
+    "context-menu-separator",
+    "context-menu-shortcut"
+  ],
+  "tokens": {
+    "popover": "var(--popover)",
+    "popover-foreground": "var(--popover-foreground)",
+    "foreground": "var(--foreground)",
+    "muted-foreground": "var(--muted-foreground)",
+    "accent": "var(--accent)",
+    "accent-foreground": "var(--accent-foreground)",
+    "destructive": "var(--destructive)",
+    "border": "var(--border)"
+  },
+  "states": [
+    "focus",
+    "disabled",
+    "data-disabled",
+    "data-open",
+    "data-closed",
+    "data-inset"
+  ]
+}

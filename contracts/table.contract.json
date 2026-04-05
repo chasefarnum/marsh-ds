@@ -1,0 +1,24 @@
+{
+  "name": "Table",
+  "source": "src/components/ui/table.tsx",
+  "primitive": "native",
+  "description": "Data table with header, body, footer, rows, cells, and caption",
+  "variants": {},
+  "slots": [
+    "table-container",
+    "table",
+    "table-header",
+    "table-body",
+    "table-footer",
+    "table-row",
+    "table-head",
+    "table-cell",
+    "table-caption"
+  ],
+  "tokens": {
+    "border": "var(--border)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)"
+  },
+  "states": ["hover", "data-state-selected"]
+}

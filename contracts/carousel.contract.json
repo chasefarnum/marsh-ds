@@ -1,0 +1,20 @@
+{
+  "name": "Carousel",
+  "source": "src/components/ui/carousel.tsx",
+  "primitive": "native",
+  "description": "Horizontal or vertical scrollable content carousel with previous/next navigation buttons",
+  "variants": {},
+  "slots": [
+    "carousel",
+    "carousel-content",
+    "carousel-item",
+    "carousel-previous",
+    "carousel-next"
+  ],
+  "tokens": {
+    "border": "var(--border)"
+  },
+  "states": [
+    "disabled"
+  ]
+}

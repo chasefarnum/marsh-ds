@@ -1,0 +1,10 @@
+{
+  "name": "DirectionProvider",
+  "source": "src/components/ui/direction.tsx",
+  "primitive": "base-ui",
+  "description": "Re-exports DirectionProvider and useDirection from base-ui for RTL/LTR support",
+  "variants": {},
+  "slots": [],
+  "tokens": {},
+  "states": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Tooltip",
+  "source": "src/components/ui/tooltip.tsx",
+  "primitive": "base-ui",
+  "description": "Popup tooltip with positioner, arrow, and provider for delay configuration",
+  "variants": {},
+  "slots": ["tooltip-provider", "tooltip", "tooltip-trigger", "tooltip-content"],
+  "tokens": {
+    "foreground": "var(--foreground)",
+    "background": "var(--background)"
+  },
+  "states": ["data-open", "data-closed", "data-state-delayed-open"]
+}

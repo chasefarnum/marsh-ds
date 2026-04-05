@@ -1,0 +1,25 @@
+{
+  "name": "Input",
+  "source": "src/components/ui/input.tsx",
+  "primitive": "base-ui",
+  "description": "Text input field with focus ring, validation, and file input styling",
+  "variants": {},
+  "slots": [
+    "input"
+  ],
+  "tokens": {
+    "border": "var(--input)",
+    "foreground": "var(--foreground)",
+    "placeholder-foreground": "var(--muted-foreground)",
+    "focus-border": "var(--ring)",
+    "focus-ring": "var(--ring)",
+    "disabled-background": "var(--input)",
+    "invalid-border": "var(--destructive)",
+    "invalid-ring": "var(--destructive)"
+  },
+  "states": [
+    "focus-visible",
+    "disabled",
+    "aria-invalid"
+  ]
+}

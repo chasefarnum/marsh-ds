@@ -1,0 +1,10 @@
+{
+  "name": "Spinner",
+  "source": "src/components/ui/spinner.tsx",
+  "primitive": "native",
+  "description": "Animated spinning loading indicator icon",
+  "variants": {},
+  "slots": [],
+  "tokens": {},
+  "states": []
+}

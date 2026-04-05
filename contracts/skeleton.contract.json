@@ -1,0 +1,12 @@
+{
+  "name": "Skeleton",
+  "source": "src/components/ui/skeleton.tsx",
+  "primitive": "native",
+  "description": "Placeholder loading animation with pulse effect",
+  "variants": {},
+  "slots": ["skeleton"],
+  "tokens": {
+    "muted": "var(--muted)"
+  },
+  "states": []
+}

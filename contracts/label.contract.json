@@ -1,0 +1,15 @@
+{
+  "name": "Label",
+  "source": "src/components/ui/label.tsx",
+  "primitive": "native",
+  "description": "Form label element with disabled state support via parent group",
+  "variants": {},
+  "slots": [
+    "label"
+  ],
+  "tokens": {},
+  "states": [
+    "group-data-disabled",
+    "peer-disabled"
+  ]
+}

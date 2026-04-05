@@ -1,0 +1,236 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Design token layer — AUTO-GENERATED from tokens/ JSON files.
+   Edit tokens/*.tokens.json files, then run: npm run tokens:build */
+@import "./generated/semantic-light.css";
+@import "./generated/semantic-dark.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   DESIGN SYSTEM — Token Layer
+   Every name here must match Figma Variables 1:1.
+   ============================================================ */
+
+@theme inline {
+  /* --- Semantic color bridge (shadcn contract) --- */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* --- Primitive colors (brand palette) --- */
+  --color-brand-black: #000000;
+  --color-brand-white: #FFFFFF;
+  --color-accent-50: #F5F5F5;
+  --color-accent-100: #E0E0E0;
+  --color-accent-200: #BDBDBD;
+  --color-accent-300: #FF00FF;
+  --color-accent-400: #CC00CC;
+  --color-accent-500: #990099;
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #EFEFEF;
+  --color-neutral-300: #D9D9D9;
+  --color-neutral-400: #C5C5C5;
+  --color-neutral-500: #949494;
+  --color-neutral-600: #717171;
+  --color-neutral-700: #4A4A4A;
+  --color-neutral-800: #2A2A2A;
+  --color-neutral-900: #1A1A1A;
+
+  /* --- Status colors (extended palette) --- */
+  --color-extended-red: #CC0000;
+  --color-extended-orange: #CC5500;
+  --color-extended-yellow: #CCAA00;
+  --color-extended-green: #336633;
+  --color-extended-purple: #663366;
+  --color-extended-blue: #336699;
+
+  /* --- Status semantic bridge --- */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-caution: var(--caution);
+  --color-caution-foreground: var(--caution-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-foreground: var(--accent-secondary-foreground);
+
+  /* --- Overlay colors --- */
+  --color-overlay-light: rgba(0, 0, 0, 0.3);
+  --color-overlay-medium: rgba(0, 0, 0, 0.5);
+  --color-overlay-heavy: rgba(0, 0, 0, 0.73);
+
+  /* --- Fonts (replace REPLACE_*_FONT with actual font vars when branding) --- */
+  --font-sans: 'Helvetica Neue', sans-serif;
+  --font-serif: 'Georgia', serif;
+  --font-mono: monospace;
+
+  /* --- Radius (brand = sharp, 2px everywhere) --- */
+  --radius: 0.125rem;
+  --radius-sm: 0.125rem;
+  --radius-md: 0.125rem;
+  --radius-lg: 0.125rem;
+  --radius-xl: 0.125rem;
+  --radius-2xl: 0.125rem;
+  --radius-3xl: 0.125rem;
+  --radius-4xl: 62.4375rem;
+
+  /* --- Shadows (minimal — brand uses photography for depth) --- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
+
+  /* --- Animation --- */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-editorial: 800ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Layout --- */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1440px;
+  --gutter: 40px;
+  --gutter-mobile: 20px;
+
+  /* --- Sidebar (shadcn compat) --- */
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  /* --- Chart (shadcn compat) --- */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    @apply font-sans font-normal;
+  }
+  button,
+  a,
+  [role="button"],
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  select,
+  summary,
+  [tabindex]:not([tabindex="-1"]) {
+    cursor: pointer;
+  }
+
+  /* --- Override browser default blue on native form controls --- */
+  input, select, textarea {
+    accent-color: var(--accent);
+  }
+
+  /* --- Text selection --- */
+  ::selection {
+    background-color: var(--secondary-foreground);
+    color: var(--primary);
+  }
+
+  /* --- Custom scrollbar (thin, unobtrusive) --- */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 3px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--muted-foreground);
+  }
+
+  /* --- Sonner toast overrides --- */
+  [data-sonner-toast] [data-icon] {
+    margin-right: 12px !important;
+  }
+  [data-sonner-toast] [data-title] {
+    font-weight: 600 !important;
+  }
+  [data-sonner-toast] [data-button] {
+    height: 28px !important;
+    padding: 0 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    border-radius: var(--radius-lg) !important;
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+  }
+  [data-sonner-toast][data-type="success"] {
+    background-color: var(--success) !important;
+    color: var(--success-foreground) !important;
+    border-color: var(--success) !important;
+  }
+  [data-sonner-toast][data-type="error"] {
+    background-color: var(--destructive) !important;
+    color: var(--destructive-foreground) !important;
+    border-color: var(--destructive) !important;
+  }
+  [data-sonner-toast][data-type="warning"] {
+    background-color: var(--warning) !important;
+    color: var(--warning-foreground) !important;
+    border-color: var(--warning) !important;
+  }
+  [data-sonner-toast][data-type="info"] {
+    background-color: var(--info) !important;
+    color: var(--info-foreground) !important;
+    border-color: var(--info) !important;
+  }
+}

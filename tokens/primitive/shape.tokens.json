@@ -1,0 +1,45 @@
+{
+  "radius": {
+    "none":    { "$type": "dimension", "$value": "0px" },
+    "default": { "$type": "dimension", "$value": "2px" },
+    "sm":      { "$type": "dimension", "$value": "2px" },
+    "md":      { "$type": "dimension", "$value": "2px" },
+    "lg":      { "$type": "dimension", "$value": "2px" },
+    "xl":      { "$type": "dimension", "$value": "2px" },
+    "2xl":     { "$type": "dimension", "$value": "2px" },
+    "3xl":     { "$type": "dimension", "$value": "2px" },
+    "pill":    { "$type": "dimension", "$value": "999px" }
+  },
+  "shadow": {
+    "sm": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.05)"
+      }
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0",
+        "offsetY": "4px",
+        "blur": "12px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.10)"
+      }
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0",
+        "offsetY": "12px",
+        "blur": "32px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.15)"
+      }
+    }
+  }
+}

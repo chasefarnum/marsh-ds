@@ -1,0 +1,30 @@
+{
+  "name": "Dialog",
+  "source": "src/components/ui/dialog.tsx",
+  "primitive": "base-ui",
+  "description": "Modal dialog overlay with title, description, content area, and footer with close button",
+  "variants": {},
+  "slots": [
+    "dialog",
+    "dialog-trigger",
+    "dialog-portal",
+    "dialog-close",
+    "dialog-overlay",
+    "dialog-content",
+    "dialog-header",
+    "dialog-footer",
+    "dialog-title",
+    "dialog-description"
+  ],
+  "tokens": {
+    "popover": "var(--popover)",
+    "popover-foreground": "var(--popover-foreground)",
+    "foreground": "var(--foreground)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)"
+  },
+  "states": [
+    "data-open",
+    "data-closed"
+  ]
+}

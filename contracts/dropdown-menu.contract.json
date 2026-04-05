@@ -1,0 +1,47 @@
+{
+  "name": "DropdownMenu",
+  "source": "src/components/ui/dropdown-menu.tsx",
+  "primitive": "base-ui",
+  "description": "Context menu with items, checkboxes, radio groups, and sub-menus",
+  "variants": {},
+  "slots": [
+    "dropdown-menu",
+    "dropdown-menu-portal",
+    "dropdown-menu-trigger",
+    "dropdown-menu-content",
+    "dropdown-menu-group",
+    "dropdown-menu-label",
+    "dropdown-menu-item",
+    "dropdown-menu-checkbox-item",
+    "dropdown-menu-checkbox-item-indicator",
+    "dropdown-menu-radio-group",
+    "dropdown-menu-radio-item",
+    "dropdown-menu-radio-item-indicator",
+    "dropdown-menu-separator",
+    "dropdown-menu-shortcut",
+    "dropdown-menu-sub",
+    "dropdown-menu-sub-trigger",
+    "dropdown-menu-sub-content"
+  ],
+  "tokens": {
+    "content-background": "var(--popover)",
+    "content-foreground": "var(--popover-foreground)",
+    "content-ring": "var(--foreground)",
+    "item-focus-background": "var(--accent)",
+    "item-focus-foreground": "var(--accent-foreground)",
+    "item-destructive": "var(--destructive)",
+    "label-foreground": "var(--muted-foreground)",
+    "separator-background": "var(--border)",
+    "shortcut-foreground": "var(--muted-foreground)"
+  },
+  "states": [
+    "focus",
+    "data-open",
+    "data-closed",
+    "data-disabled",
+    "data-inset",
+    "data-variant",
+    "data-popup-open",
+    "data-side"
+  ]
+}

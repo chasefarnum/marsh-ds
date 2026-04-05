@@ -1,0 +1,24 @@
+{
+  "name": "Avatar",
+  "source": "src/components/ui/avatar.tsx",
+  "primitive": "base-ui",
+  "description": "User avatar with image, fallback initials, optional badge, and group layout support",
+  "variants": {},
+  "slots": [
+    "avatar",
+    "avatar-image",
+    "avatar-fallback",
+    "avatar-badge",
+    "avatar-group",
+    "avatar-group-count"
+  ],
+  "tokens": {
+    "border": "var(--border)",
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)",
+    "primary": "var(--primary)",
+    "primary-foreground": "var(--primary-foreground)",
+    "background": "var(--background)"
+  },
+  "states": []
+}

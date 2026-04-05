@@ -1,0 +1,37 @@
+{
+  "name": "InputGroup",
+  "source": "src/components/ui/input-group.tsx",
+  "primitive": "native",
+  "description": "Composite input with addon slots, buttons, and text decorations",
+  "variants": {
+    "align": {
+      "options": ["inline-start", "inline-end", "block-start", "block-end"],
+      "default": "inline-start"
+    },
+    "size": {
+      "options": ["xs", "sm", "icon-xs", "icon-sm"],
+      "default": "xs"
+    }
+  },
+  "slots": [
+    "input-group",
+    "input-group-addon",
+    "input-group-control"
+  ],
+  "tokens": {
+    "border": "var(--input)",
+    "addon-foreground": "var(--muted-foreground)",
+    "focus-border": "var(--ring)",
+    "focus-ring": "var(--ring)",
+    "disabled-background": "var(--input)",
+    "invalid-border": "var(--destructive)",
+    "invalid-ring": "var(--destructive)"
+  },
+  "states": [
+    "focus-within",
+    "disabled",
+    "aria-invalid",
+    "data-align",
+    "data-size"
+  ]
+}

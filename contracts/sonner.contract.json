@@ -1,0 +1,15 @@
+{
+  "name": "Toaster",
+  "source": "src/components/ui/sonner.tsx",
+  "primitive": "native",
+  "description": "Toast notification system powered by Sonner with themed styling and custom icons",
+  "variants": {},
+  "slots": [],
+  "tokens": {
+    "popover": "var(--popover)",
+    "popover-foreground": "var(--popover-foreground)",
+    "border": "var(--border)",
+    "radius": "var(--radius)"
+  },
+  "states": []
+}

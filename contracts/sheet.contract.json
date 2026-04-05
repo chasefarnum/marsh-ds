@@ -1,0 +1,26 @@
+{
+  "name": "Sheet",
+  "source": "src/components/ui/sheet.tsx",
+  "primitive": "base-ui",
+  "description": "Slide-out panel dialog with overlay, positioned from any edge of the screen",
+  "variants": {},
+  "slots": [
+    "sheet",
+    "sheet-trigger",
+    "sheet-close",
+    "sheet-portal",
+    "sheet-overlay",
+    "sheet-content",
+    "sheet-header",
+    "sheet-footer",
+    "sheet-title",
+    "sheet-description"
+  ],
+  "tokens": {
+    "popover": "var(--popover)",
+    "popover-foreground": "var(--popover-foreground)",
+    "foreground": "var(--foreground)",
+    "muted-foreground": "var(--muted-foreground)"
+  },
+  "states": ["data-ending-style", "data-starting-style"]
+}

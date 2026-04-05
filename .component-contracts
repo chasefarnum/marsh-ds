@@ -1,0 +1,12 @@
+{
+  "figmaFileKey": "REPLACE_WITH_YOUR_FIGMA_FILE_KEY",
+  "tokensDir": "tokens",
+  "contractsDir": "contracts",
+  "primitivesGlob": "tokens/primitive/**/*.tokens.json",
+  "semanticFiles": {
+    "light": "tokens/semantic/light.tokens.json",
+    "dark":  "tokens/semantic/dark.tokens.json"
+  },
+  "brand": "REPLACE_WITH_BRAND_SLUG",
+  "componentSourceDir": "src/components/ui"
+}

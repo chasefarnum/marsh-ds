@@ -1,0 +1,21 @@
+{
+  "name": "Resizable",
+  "source": "src/components/ui/resizable.tsx",
+  "primitive": "native",
+  "description": "Resizable panel layout with draggable handle separators",
+  "variants": {},
+  "slots": [
+    "resizable-panel-group",
+    "resizable-panel",
+    "resizable-handle"
+  ],
+  "tokens": {
+    "handle-background": "var(--border)",
+    "handle-focus-ring": "var(--ring)",
+    "offset-background": "var(--ring-offset-background)"
+  },
+  "states": [
+    "focus-visible",
+    "aria-orientation"
+  ]
+}

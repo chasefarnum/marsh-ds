@@ -1,0 +1,26 @@
+{
+  "name": "Accordion",
+  "source": "src/components/ui/accordion.tsx",
+  "primitive": "base-ui",
+  "description": "Expandable/collapsible content sections with trigger headers and animated panels",
+  "variants": {},
+  "slots": [
+    "accordion",
+    "accordion-item",
+    "accordion-trigger",
+    "accordion-trigger-icon",
+    "accordion-content"
+  ],
+  "tokens": {
+    "border": "var(--border)",
+    "ring": "var(--ring)",
+    "muted-foreground": "var(--muted-foreground)",
+    "foreground": "var(--foreground)"
+  },
+  "states": [
+    "hover",
+    "focus-visible",
+    "aria-disabled",
+    "aria-expanded"
+  ]
+}

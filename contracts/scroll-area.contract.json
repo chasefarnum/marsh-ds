@@ -1,0 +1,13 @@
+{
+  "name": "ScrollArea",
+  "source": "src/components/ui/scroll-area.tsx",
+  "primitive": "base-ui",
+  "description": "Scrollable container with custom styled scrollbars",
+  "variants": {},
+  "slots": ["scroll-area", "scroll-area-viewport", "scroll-area-scrollbar", "scroll-area-thumb"],
+  "tokens": {
+    "ring": "var(--ring)",
+    "border": "var(--border)"
+  },
+  "states": ["focus-visible"]
+}

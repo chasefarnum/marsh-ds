@@ -1,0 +1,23 @@
+{
+  "name": "HoverCard",
+  "source": "src/components/ui/hover-card.tsx",
+  "primitive": "base-ui",
+  "description": "Preview card that appears on hover with positioned popup content",
+  "variants": {},
+  "slots": [
+    "hover-card",
+    "hover-card-trigger",
+    "hover-card-portal",
+    "hover-card-content"
+  ],
+  "tokens": {
+    "content-background": "var(--popover)",
+    "content-foreground": "var(--popover-foreground)",
+    "content-ring": "var(--foreground)"
+  },
+  "states": [
+    "data-open",
+    "data-closed",
+    "data-side"
+  ]
+}

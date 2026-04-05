@@ -1,0 +1,28 @@
+{
+  "name": "RadioGroup",
+  "source": "src/components/ui/radio-group.tsx",
+  "primitive": "base-ui",
+  "description": "Radio button group with circular indicators and checked state styling",
+  "variants": {},
+  "slots": [
+    "radio-group",
+    "radio-group-item",
+    "radio-group-indicator"
+  ],
+  "tokens": {
+    "border": "var(--input)",
+    "focus-border": "var(--ring)",
+    "focus-ring": "var(--ring)",
+    "checked-border": "var(--primary)",
+    "checked-background": "var(--primary)",
+    "checked-foreground": "var(--primary-foreground)",
+    "invalid-border": "var(--destructive)",
+    "invalid-ring": "var(--destructive)"
+  },
+  "states": [
+    "focus-visible",
+    "disabled",
+    "aria-invalid",
+    "data-checked"
+  ]
+}

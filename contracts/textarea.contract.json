@@ -1,0 +1,15 @@
+{
+  "name": "Textarea",
+  "source": "src/components/ui/textarea.tsx",
+  "primitive": "native",
+  "description": "Multi-line text input with auto-sizing field and validation states",
+  "variants": {},
+  "slots": ["textarea"],
+  "tokens": {
+    "input": "var(--input)",
+    "muted-foreground": "var(--muted-foreground)",
+    "ring": "var(--ring)",
+    "destructive": "var(--destructive)"
+  },
+  "states": ["focus-visible", "disabled", "aria-invalid"]
+}

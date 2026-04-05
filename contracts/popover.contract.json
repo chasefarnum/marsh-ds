@@ -1,0 +1,26 @@
+{
+  "name": "Popover",
+  "source": "src/components/ui/popover.tsx",
+  "primitive": "base-ui",
+  "description": "Positioned popup panel with title, description, and content sections",
+  "variants": {},
+  "slots": [
+    "popover",
+    "popover-trigger",
+    "popover-content",
+    "popover-header",
+    "popover-title",
+    "popover-description"
+  ],
+  "tokens": {
+    "content-background": "var(--popover)",
+    "content-foreground": "var(--popover-foreground)",
+    "content-ring": "var(--foreground)",
+    "description-foreground": "var(--muted-foreground)"
+  },
+  "states": [
+    "data-open",
+    "data-closed",
+    "data-side"
+  ]
+}

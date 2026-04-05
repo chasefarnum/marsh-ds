@@ -1,0 +1,26 @@
+{
+  "name": "InputOTP",
+  "source": "src/components/ui/input-otp.tsx",
+  "primitive": "native",
+  "description": "One-time password input with individual character slots and separator",
+  "variants": {},
+  "slots": [
+    "input-otp",
+    "input-otp-group",
+    "input-otp-slot",
+    "input-otp-separator"
+  ],
+  "tokens": {
+    "slot-border": "var(--input)",
+    "slot-active-border": "var(--ring)",
+    "slot-active-ring": "var(--ring)",
+    "caret-background": "var(--foreground)",
+    "invalid-border": "var(--destructive)",
+    "invalid-ring": "var(--destructive)"
+  },
+  "states": [
+    "disabled",
+    "aria-invalid",
+    "data-active"
+  ]
+}

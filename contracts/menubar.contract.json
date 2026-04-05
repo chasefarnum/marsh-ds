@@ -1,0 +1,47 @@
+{
+  "name": "Menubar",
+  "source": "src/components/ui/menubar.tsx",
+  "primitive": "base-ui",
+  "description": "Horizontal menu bar with dropdown menus, checkbox items, radio items, and sub-menus",
+  "variants": {},
+  "slots": [
+    "menubar",
+    "menubar-menu",
+    "menubar-group",
+    "menubar-portal",
+    "menubar-trigger",
+    "menubar-content",
+    "menubar-item",
+    "menubar-checkbox-item",
+    "menubar-radio-group",
+    "menubar-radio-item",
+    "menubar-label",
+    "menubar-separator",
+    "menubar-shortcut",
+    "menubar-sub",
+    "menubar-sub-trigger",
+    "menubar-sub-content"
+  ],
+  "tokens": {
+    "trigger-hover-background": "var(--muted)",
+    "content-background": "var(--popover)",
+    "content-foreground": "var(--popover-foreground)",
+    "content-ring": "var(--foreground)",
+    "item-focus-background": "var(--accent)",
+    "item-focus-foreground": "var(--accent-foreground)",
+    "item-destructive": "var(--destructive)",
+    "separator-background": "var(--border)",
+    "shortcut-foreground": "var(--muted-foreground)"
+  },
+  "states": [
+    "hover",
+    "focus",
+    "aria-expanded",
+    "data-open",
+    "data-closed",
+    "data-disabled",
+    "data-inset",
+    "data-variant",
+    "data-side"
+  ]
+}

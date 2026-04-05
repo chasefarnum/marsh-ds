@@ -1,0 +1,25 @@
+{
+  "name": "ToggleGroup",
+  "source": "src/components/ui/toggle-group.tsx",
+  "primitive": "base-ui",
+  "description": "Group of toggle buttons that share variant and size context with optional spacing",
+  "variants": {
+    "variant": {
+      "options": ["default", "outline"],
+      "default": "default"
+    },
+    "size": {
+      "options": ["default", "sm", "lg"],
+      "default": "default"
+    }
+  },
+  "slots": ["toggle-group", "toggle-group-item"],
+  "tokens": {
+    "muted": "var(--muted)",
+    "foreground": "var(--foreground)",
+    "ring": "var(--ring)",
+    "input": "var(--input)",
+    "destructive": "var(--destructive)"
+  },
+  "states": ["hover", "focus", "focus-visible", "disabled", "aria-invalid", "aria-pressed", "data-state-on"]
+}

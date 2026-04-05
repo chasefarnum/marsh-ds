@@ -1,0 +1,14 @@
+{
+  "name": "Collapsible",
+  "source": "src/components/ui/collapsible.tsx",
+  "primitive": "base-ui",
+  "description": "Simple show/hide toggle container with trigger and collapsible content panel",
+  "variants": {},
+  "slots": [
+    "collapsible",
+    "collapsible-trigger",
+    "collapsible-content"
+  ],
+  "tokens": {},
+  "states": []
+}

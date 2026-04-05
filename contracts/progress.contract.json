@@ -1,0 +1,20 @@
+{
+  "name": "Progress",
+  "source": "src/components/ui/progress.tsx",
+  "primitive": "base-ui",
+  "description": "Progress bar with track, indicator, label, and value display",
+  "variants": {},
+  "slots": [
+    "progress",
+    "progress-track",
+    "progress-indicator",
+    "progress-label",
+    "progress-value"
+  ],
+  "tokens": {
+    "track-background": "var(--muted)",
+    "indicator-background": "var(--primary)",
+    "value-foreground": "var(--muted-foreground)"
+  },
+  "states": []
+}

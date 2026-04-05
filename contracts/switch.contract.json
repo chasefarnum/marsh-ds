@@ -1,0 +1,18 @@
+{
+  "name": "Switch",
+  "source": "src/components/ui/switch.tsx",
+  "primitive": "base-ui",
+  "description": "Toggle switch control with checked/unchecked states and size variants",
+  "variants": {},
+  "slots": ["switch", "switch-thumb"],
+  "tokens": {
+    "primary": "var(--primary)",
+    "primary-foreground": "var(--primary-foreground)",
+    "input": "var(--input)",
+    "background": "var(--background)",
+    "foreground": "var(--foreground)",
+    "ring": "var(--ring)",
+    "destructive": "var(--destructive)"
+  },
+  "states": ["focus-visible", "aria-invalid", "data-checked", "data-unchecked", "data-disabled"]
+}

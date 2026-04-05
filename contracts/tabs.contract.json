@@ -1,0 +1,21 @@
+{
+  "name": "Tabs",
+  "source": "src/components/ui/tabs.tsx",
+  "primitive": "base-ui",
+  "description": "Tabbed interface with list of triggers and content panels, supporting default and line variants",
+  "variants": {
+    "variant": {
+      "options": ["default", "line"],
+      "default": "default"
+    }
+  },
+  "slots": ["tabs", "tabs-list", "tabs-trigger", "tabs-content"],
+  "tokens": {
+    "muted": "var(--muted)",
+    "muted-foreground": "var(--muted-foreground)",
+    "foreground": "var(--foreground)",
+    "ring": "var(--ring)",
+    "secondary": "var(--secondary)"
+  },
+  "states": ["hover", "focus-visible", "disabled", "aria-disabled", "data-active"]
+}

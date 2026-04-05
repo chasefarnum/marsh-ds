@@ -1,0 +1,10 @@
+{
+  "name": "AspectRatio",
+  "source": "src/components/ui/aspect-ratio.tsx",
+  "primitive": "native",
+  "description": "Container that maintains a specified aspect ratio for its content",
+  "variants": {},
+  "slots": ["aspect-ratio"],
+  "tokens": {},
+  "states": []
+}
