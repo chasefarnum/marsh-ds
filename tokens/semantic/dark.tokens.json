@@ -18,7 +18,7 @@
     "destructive-foreground":        { "$type": "color", "$value": "{color.brand.white}" },
     "warning":                       { "$type": "color", "$value": "{color.extended.gold.750}" },
     "warning-foreground":            { "$type": "color", "$value": "{color.accent.1000}" },
-    "caution":                       { "$type": "color", "$value": "{color.extended.yellow}" },
+    "caution":                       { "$type": "color", "$value": "{color.extended.gold.500}" },
     "caution-foreground":            { "$type": "color", "$value": "{color.accent.1000}" },
     "success":                       { "$type": "color", "$value": "{color.extended.success}" },
     "success-foreground":            { "$type": "color", "$value": "{color.brand.white}" },

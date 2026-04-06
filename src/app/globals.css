@@ -51,33 +51,46 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* --- Primitive colors (brand palette) --- */
+  /* --- Primitive colors — Blue (Brand, Info, Selected) --- */
   --color-brand-black: #000000;
-  --color-brand-white: #FFFFFF;
-  --color-accent-50: #F5F5F5;
-  --color-accent-100: #E0E0E0;
-  --color-accent-200: #BDBDBD;
-  --color-accent-300: #FF00FF;
-  --color-accent-400: #CC00CC;
-  --color-accent-500: #990099;
-  --color-neutral-50: #FAFAFA;
-  --color-neutral-100: #F5F5F5;
-  --color-neutral-200: #EFEFEF;
-  --color-neutral-300: #D9D9D9;
-  --color-neutral-400: #C5C5C5;
-  --color-neutral-500: #949494;
-  --color-neutral-600: #717171;
-  --color-neutral-700: #4A4A4A;
-  --color-neutral-800: #2A2A2A;
-  --color-neutral-900: #1A1A1A;
+  --color-brand-white: #ffffff;
+  --color-accent-250: #ceecff;
+  --color-accent-500: #82baff;
+  --color-accent-750: #0b4bff;
+  --color-accent-1000: #000f47;
 
-  /* --- Status colors (extended palette) --- */
-  --color-extended-red: #CC0000;
-  --color-extended-orange: #CC5500;
-  --color-extended-yellow: #CCAA00;
-  --color-extended-green: #336633;
-  --color-extended-purple: #663366;
-  --color-extended-blue: #336699;
+  /* --- Primitive colors — Gray (Neutral) --- */
+  --color-neutral-250: #f7f3ee;
+  --color-neutral-500: #b9b6b1;
+  --color-neutral-750: #7b7974;
+  --color-neutral-1000: #3d3c37;
+
+  /* --- Extended — Gold (Accent + Warning) --- */
+  --color-extended-gold-250: #fff3da;
+  --color-extended-gold-500: #ffd98a;
+  --color-extended-gold-750: #ffbf00;
+  --color-extended-gold-1000: #cb7e03;
+
+  /* --- Extended — Green (Success) --- */
+  --color-extended-green-250: #dfecd7;
+  --color-extended-green-500: #b0dc92;
+  --color-extended-green-750: #6abf30;
+  --color-extended-green-1000: #2f7500;
+
+  /* --- Extended — Purple (data-viz / accent via primitives) --- */
+  --color-extended-purple-250: #f5e8ff;
+  --color-extended-purple-500: #deb1ff;
+  --color-extended-purple-750: #8f20de;
+  --color-extended-purple-1000: #5e017f;
+
+  /* --- Extended — Status flat --- */
+  --color-extended-red: #c53532;
+  --color-extended-success: #14853d;
+
+  /* --- Overlays (Midnight Blue based) --- */
+  --color-overlay-light: rgba(0, 15, 71, 0.08);
+  --color-overlay-medium: rgba(0, 15, 71, 0.24);
+  --color-overlay-heavy: rgba(0, 15, 71, 0.64);
 
   /* --- Status semantic bridge --- */
   --color-destructive: var(--destructive);
@@ -93,30 +106,23 @@
   --color-accent-secondary: var(--accent-secondary);
   --color-accent-secondary-foreground: var(--accent-secondary-foreground);
 
-  /* --- Overlay colors --- */
-  --color-overlay-light: rgba(0, 0, 0, 0.3);
-  --color-overlay-medium: rgba(0, 0, 0, 0.5);
-  --color-overlay-heavy: rgba(0, 0, 0, 0.73);
-
   /* --- Fonts --- */
   --font-sans: var(--font-noto-sans), 'Helvetica Neue', sans-serif;
   --font-serif: 'Marsh Serif', 'Georgia Pro Light Serif', Georgia, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* --- Radius (brand = sharp, 2px everywhere) --- */
-  --radius: 0.125rem;
-  --radius-sm: 0.125rem;
-  --radius-md: 0.125rem;
-  --radius-lg: 0.125rem;
-  --radius-xl: 0.125rem;
-  --radius-2xl: 0.125rem;
-  --radius-3xl: 0.125rem;
-  --radius-4xl: 62.4375rem;
+  /* --- Radius (conservative corporate scale) --- */
+  --radius: 4px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
+  --radius-full: 9999px;
 
-  /* --- Shadows (minimal — brand uses photography for depth) --- */
+  /* --- Shadows (minimal — no decorative elevation) --- */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.10);
 
   /* --- Animation --- */
   --duration-fast: 150ms;
