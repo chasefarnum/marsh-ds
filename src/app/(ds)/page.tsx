@@ -3,8 +3,6 @@ export default function HomePage() {
     <>
       <div className="mb-[72px]">
         <h1 className="font-sans text-5xl tracking-tight text-foreground">
-          <span className="font-bold tracking-widest">[SYSTEM NAME]</span>
-          <br />
           <span className="font-light">Marsh design system</span>
         </h1>
         <p className="mt-4 font-serif text-xl text-muted-foreground">
