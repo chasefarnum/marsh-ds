@@ -5,11 +5,11 @@ export default function HomePage() {
         <h1 className="font-sans text-5xl tracking-tight text-foreground">
           <span className="font-bold tracking-widest">[SYSTEM NAME]</span>
           <br />
-          <span className="font-light">[Brand Name] design system</span>
+          <span className="font-light">Marsh design system</span>
         </h1>
         <p className="mt-4 font-serif text-xl text-muted-foreground">
           [System Name] provides the components and tools that help teams work
-          more efficiently and bring greater consistency to [Brand Name]&rsquo;s
+          more efficiently and bring greater consistency to Marsh&rsquo;s
           digital presence.
         </p>
       </div>

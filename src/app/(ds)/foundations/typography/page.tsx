@@ -18,11 +18,19 @@ const sansScale = [
 ];
 
 const serifScale = [
+  { className: "text-serif-base", size: "20px" },
+  { className: "text-serif-lg",   size: "26px" },
+  { className: "text-serif-xl",   size: "32px" },
+  { className: "text-serif-2xl",  size: "40px" },
+  { className: "text-serif-3xl",  size: "52px" },
+];
+
+const monoScale = [
+  { className: "text-xs", size: "11px" },
+  { className: "text-sm", size: "13px" },
   { className: "text-base", size: "16px" },
   { className: "text-lg", size: "18px" },
   { className: "text-xl", size: "20px" },
-  { className: "text-2xl", size: "26px" },
-  { className: "text-3xl", size: "32px" },
 ];
 
 const weightScale = [
@@ -63,7 +71,7 @@ export default function TypographyPage() {
         description="Type scales, font families, and letter-spacing tokens for consistent hierarchy."
       />
 
-      <SectionTitle>Sans-Serif Scale (REPLACE_SANS_FONT)</SectionTitle>
+      <SectionTitle>Sans-Serif Scale (Noto Sans)</SectionTitle>
       <Preview>
         <div className="space-y-6">
           {sansScale.map((item) => (
@@ -81,7 +89,7 @@ export default function TypographyPage() {
 
       <SectionBreak />
 
-      <SectionTitle>Serif Scale (REPLACE_SERIF_FONT)</SectionTitle>
+      <SectionTitle>Serif Scale (Marsh Serif)</SectionTitle>
       <Preview>
         <div className="space-y-6">
           {serifScale.map((item) => (
@@ -90,7 +98,25 @@ export default function TypographyPage() {
                 The quick brown fox jumps over the lazy dog
               </p>
               <p className="font-mono text-xs text-muted-foreground">
-                font-serif {item.className} &middot; {item.size}
+                {item.className} &middot; {item.size}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Preview>
+
+      <SectionBreak />
+
+      <SectionTitle>Monospace Scale (Noto Sans Mono)</SectionTitle>
+      <Preview>
+        <div className="space-y-6">
+          {monoScale.map((item) => (
+            <div key={item.className} className="space-y-1">
+              <p className={`font-mono text-foreground ${item.className}`}>
+                The quick brown fox jumps over the lazy dog
+              </p>
+              <p className="font-mono text-xs text-muted-foreground">
+                {item.className} &middot; {item.size}
               </p>
             </div>
           ))}

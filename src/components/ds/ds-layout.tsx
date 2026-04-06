@@ -22,7 +22,7 @@ export function DSLayout({ children }: { children: React.ReactNode }) {
 
       {/* Sidebar */}
       <aside
-        className={`fixed left-0 top-0 bottom-0 z-40 flex w-64 flex-col border-r border-border/10 bg-muted transition-transform duration-200 ease-out ${
+        className={`fixed left-0 top-0 bottom-0 z-40 flex w-64 flex-col border-r border-border bg-sidebar transition-transform duration-200 ease-out ${
           open ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0`}
       >
@@ -33,16 +33,16 @@ export function DSLayout({ children }: { children: React.ReactNode }) {
               <Image
                 src="/marsh-logo-midnight.svg"
                 alt="Marsh"
-                width={180}
-                height={40}
+                width={120}
+                height={28}
                 priority
                 className="block dark:hidden"
               />
               <Image
                 src="/marsh-logo-white.svg"
                 alt="Marsh"
-                width={180}
-                height={40}
+                width={120}
+                height={28}
                 priority
                 className="hidden dark:block"
               />

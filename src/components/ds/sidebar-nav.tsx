@@ -92,6 +92,7 @@ const NAV = [
       { href: "/tools/ui-kits", label: "UI Kits" },
       { href: "/tools/fonts", label: "Fonts" },
       { href: "/tools/icons", label: "Icons" },
+      { href: "/tools/illustrations", label: "Illustrations" },
     ],
   },
 ];

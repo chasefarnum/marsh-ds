@@ -51,40 +51,87 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* --- Primitive colors — Blue (Brand, Info, Selected) --- */
+  /* --- Primitive colors — Brand --- */
   --color-brand-black: #000000;
   --color-brand-white: #ffffff;
-  --color-accent-250: #ceecff;
-  --color-accent-500: #82baff;
-  --color-accent-750: #0b4bff;
-  --color-accent-1000: #000f47;
 
-  /* --- Primitive colors — Gray (Neutral) --- */
-  --color-neutral-250: #f7f3ee;
-  --color-neutral-500: #b9b6b1;
-  --color-neutral-750: #7b7974;
-  --color-neutral-1000: #3d3c37;
+  /* --- Primitive colors — Blue (Primary Brand) --- */
+  --color-accent-950: #000917;
+  --color-accent-900: #00112d;
+  --color-accent-850: #000f47;
+  --color-accent-800: #042384;
+  --color-accent-700: #0737c2;
+  --color-accent-600: #0b4bff;
+  --color-accent-500: #3370ff;
+  --color-accent-400: #5a95ff;
+  --color-accent-300: #82baff;
+  --color-accent-200: #a8d3ff;
+  --color-accent-100: #ceecff;
+  --color-accent-050: #e7f6ff;
 
-  /* --- Extended — Gold (Accent + Warning) --- */
-  --color-extended-gold-250: #fff3da;
-  --color-extended-gold-500: #ffd98a;
-  --color-extended-gold-750: #ffbf00;
-  --color-extended-gold-1000: #cb7e03;
+  /* --- Primitive colors — Neutral (Grays) --- */
+  --color-neutral-950: #100f0e;
+  --color-neutral-900: #1f1e1c;
+  --color-neutral-850: #2e2d2a;
+  --color-neutral-800: #3d3c37;
+  --color-neutral-700: #5c5b56;
+  --color-neutral-600: #7b7974;
+  --color-neutral-500: #9a9893;
+  --color-neutral-400: #b9b6b1;
+  --color-neutral-300: #d8d5d0;
+  --color-neutral-200: #e8e4df;
+  --color-neutral-100: #f0ece7;
+  --color-neutral-050: #f7f3ee;
 
-  /* --- Extended — Green (Success) --- */
-  --color-extended-green-250: #dfecd7;
-  --color-extended-green-500: #b0dc92;
-  --color-extended-green-750: #6abf30;
-  --color-extended-green-1000: #2f7500;
+  /* --- Extended — Gold (Accent) --- */
+  --color-extended-gold-900: #2e1d00;
+  --color-extended-gold-800: #704602;
+  --color-extended-gold-700: #cb7e03;
+  --color-extended-gold-600: #e59f02;
+  --color-extended-gold-500: #ffbf00;
+  --color-extended-gold-400: #ffcc45;
+  --color-extended-gold-300: #ffd98a;
+  --color-extended-gold-200: #ffe6b2;
+  --color-extended-gold-100: #fff3da;
+  --color-extended-gold-050: #fff9ed;
 
-  /* --- Extended — Purple (data-viz / accent via primitives) --- */
-  --color-extended-purple-250: #f5e8ff;
-  --color-extended-purple-500: #deb1ff;
-  --color-extended-purple-750: #8f20de;
-  --color-extended-purple-1000: #5e017f;
+  /* --- Extended — Green --- */
+  --color-extended-green-900: #0f2415;
+  --color-extended-green-800: #1f4e00;
+  --color-extended-green-700: #2f7500;
+  --color-extended-green-600: #4d9a18;
+  --color-extended-green-500: #6abf30;
+  --color-extended-green-400: #8dce61;
+  --color-extended-green-300: #b0dc92;
+  --color-extended-green-200: #c8e4b5;
+  --color-extended-green-100: #dfecd7;
+  --color-extended-green-050: #eff6eb;
 
-  /* --- Extended — Status flat --- */
-  --color-extended-red: #c53532;
+  /* --- Extended — Purple (data-viz) --- */
+  --color-extended-purple-900: #2f0140;
+  --color-extended-purple-800: #5e017f;
+  --color-extended-purple-700: #8f20de;
+  --color-extended-purple-600: #a344e6;
+  --color-extended-purple-500: #b769ef;
+  --color-extended-purple-400: #ca8df7;
+  --color-extended-purple-300: #deb1ff;
+  --color-extended-purple-200: #eacdff;
+  --color-extended-purple-100: #f5e8ff;
+  --color-extended-purple-050: #faf4ff;
+
+  /* --- Extended — Red --- */
+  --color-extended-red-900: #380a0b;
+  --color-extended-red-800: #691315;
+  --color-extended-red-700: #9a1c1f;
+  --color-extended-red-600: #c53532;
+  --color-extended-red-500: #ef4e45;
+  --color-extended-red-400: #f77e76;
+  --color-extended-red-300: #ffaea6;
+  --color-extended-red-200: #ffc7c1;
+  --color-extended-red-100: #ffdfdb;
+  --color-extended-red-050: #fff7f6;
+
+  /* --- Extended — Success flat --- */
   --color-extended-success: #14853d;
 
   /* --- Overlays (Midnight Blue based) --- */
@@ -93,6 +140,9 @@
   --color-overlay-heavy: rgba(0, 15, 71, 0.64);
 
   /* --- Status semantic bridge --- */
+  --color-outline-border: var(--outline-border);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-warning: var(--warning);
@@ -109,7 +159,10 @@
   /* --- Fonts --- */
   --font-sans: var(--font-noto-sans), 'Helvetica Neue', sans-serif;
   --font-serif: 'Marsh Serif', 'Georgia Pro Light Serif', Georgia, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-mono: var(--font-noto-sans-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* --- Serif type scale --- */
+  --font-size-serif-base: 20px;
 
   /* --- Radius (conservative corporate scale) --- */
   --radius: 4px;
@@ -198,8 +251,8 @@
 
   /* --- Text selection --- */
   ::selection {
-    background-color: var(--secondary-foreground);
-    color: var(--primary);
+    background-color: var(--color-extended-gold-500);
+    color: var(--color-accent-850);
   }
 
   /* --- Custom scrollbar (thin, unobtrusive) --- */
@@ -223,20 +276,25 @@
   }
 
   /* --- Sonner toast overrides --- */
+  [data-sonner-toast] {
+    font-family: var(--font-sans) !important;
+  }
   [data-sonner-toast] [data-icon] {
     margin-right: 12px !important;
   }
   [data-sonner-toast] [data-title] {
     font-weight: 600 !important;
+    font-family: var(--font-sans) !important;
+  }
+  [data-sonner-toast] [data-description] {
+    font-family: var(--font-sans) !important;
   }
   [data-sonner-toast] [data-button] {
     height: 28px !important;
     padding: 0 10px !important;
     font-size: 12px !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.1em !important;
-    border-radius: var(--radius-lg) !important;
+    font-weight: 500 !important;
+    border-radius: var(--radius) !important;
     background-color: var(--primary) !important;
     color: var(--primary-foreground) !important;
   }
@@ -245,19 +303,49 @@
     color: var(--success-foreground) !important;
     border-color: var(--success) !important;
   }
+  [data-sonner-toast][data-type="success"] [data-title],
+  [data-sonner-toast][data-type="success"] [data-description],
+  [data-sonner-toast][data-type="success"] [data-icon] {
+    color: var(--success-foreground) !important;
+  }
   [data-sonner-toast][data-type="error"] {
     background-color: var(--destructive) !important;
     color: var(--destructive-foreground) !important;
     border-color: var(--destructive) !important;
+  }
+  [data-sonner-toast][data-type="error"] [data-title],
+  [data-sonner-toast][data-type="error"] [data-description],
+  [data-sonner-toast][data-type="error"] [data-icon] {
+    color: var(--destructive-foreground) !important;
   }
   [data-sonner-toast][data-type="warning"] {
     background-color: var(--warning) !important;
     color: var(--warning-foreground) !important;
     border-color: var(--warning) !important;
   }
+  [data-sonner-toast][data-type="warning"] [data-title],
+  [data-sonner-toast][data-type="warning"] [data-description],
+  [data-sonner-toast][data-type="warning"] [data-icon] {
+    color: var(--warning-foreground) !important;
+  }
   [data-sonner-toast][data-type="info"] {
     background-color: var(--info) !important;
     color: var(--info-foreground) !important;
     border-color: var(--info) !important;
   }
+  [data-sonner-toast][data-type="info"] [data-title],
+  [data-sonner-toast][data-type="info"] [data-description],
+  [data-sonner-toast][data-type="info"] [data-icon] {
+    color: var(--info-foreground) !important;
+  }
+}
+
+
+/* Serif type scale — 20px base → 52px 3xl */
+@layer utilities {
+  .text-serif-base { font-size: 20px; line-height: 1.5; }
+  .text-serif-lg   { font-size: 26px; line-height: 1.4; }
+  .text-serif-xl   { font-size: 32px; line-height: 1.35; }
+  .text-serif-2xl  { font-size: 40px; line-height: 1.25; }
+  .text-serif-3xl  { font-size: 52px; line-height: 1.15; }
 }

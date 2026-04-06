@@ -49,7 +49,7 @@ export function TokenTable({
           {rows.map((row, idx) => (
             <tr
               key={row.token}
-              className="border-b border-border/50 last:border-b-0 transition-colors hover:bg-muted/50"
+              className="border-b border-border last:border-b-0 transition-colors hover:bg-muted/50"
             >
               {showSwatch && (
                 <td className="px-4 py-3">

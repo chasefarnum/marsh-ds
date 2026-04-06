@@ -42,7 +42,7 @@ export function ColorChip({
       </div>
 
       {/* Label */}
-      <div className="w-full border-t border-border bg-muted px-3 py-2.5">
+      <div className="w-full border-t border-border bg-card px-3 py-2.5">
         <p className="font-mono text-xs text-foreground">{name}</p>
         {value && (
           <p className="mt-0.5 font-mono text-[11px] text-muted-foreground">

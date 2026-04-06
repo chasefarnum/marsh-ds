@@ -38,9 +38,13 @@ export default function ButtonPage() {
             <Button variant="link">Submit</Button>
             <span className="text-xs text-muted-foreground font-mono">link</span>
           </div>
-          <div className="flex flex-col items-center justify-center gap-2 py-8 border-t">
+          <div className="flex flex-col items-center justify-center gap-2 py-8 border-t border-r md:border-r-0">
             <Button variant="destructive">Delete</Button>
             <span className="text-xs text-muted-foreground font-mono">destructive</span>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2 py-8 border-t">
+            <Button variant="gold">Submit</Button>
+            <span className="text-xs text-muted-foreground font-mono">gold</span>
           </div>
         </div>
       </Preview>

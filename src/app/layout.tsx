@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
@@ -11,9 +11,16 @@ const notoSans = Noto_Sans({
   display: "swap",
 });
 
+const notoSansMono = Noto_Sans_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-noto-sans-mono",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "[System Name] — Design System",
-  description: "Design system documentation for [Brand Name].",
+  description: "Design system documentation for Marsh.",
 };
 
 export default function RootLayout({
@@ -24,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${notoSans.variable} h-full antialiased`}
+      className={`${notoSans.variable} ${notoSansMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full">

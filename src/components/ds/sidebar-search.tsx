@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { BiSearch, BiX } from "react-icons/bi";
+import { Input } from "@/components/ui/input";
 
 const ALL_PAGES = [
   // Foundations
@@ -66,9 +67,13 @@ export function SidebarSearch() {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(0);
-  const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+
+  const focusInput = () =>
+    (document.getElementById("sidebar-search-input") as HTMLInputElement | null)?.focus();
+  const blurInput = () =>
+    (document.getElementById("sidebar-search-input") as HTMLInputElement | null)?.blur();
 
   const filtered = query.trim()
     ? ALL_PAGES.filter((p) =>
@@ -106,13 +111,13 @@ export function SidebarSearch() {
     const handler = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        inputRef.current?.focus();
+        focusInput();
         setOpen(true);
       }
       if (e.key === "Escape") {
         setOpen(false);
         setQuery("");
-        inputRef.current?.blur();
+        blurInput();
       }
     };
     document.addEventListener("keydown", handler);
@@ -131,7 +136,7 @@ export function SidebarSearch() {
       router.push(flatResults[selectedIdx].href);
       setQuery("");
       setOpen(false);
-      inputRef.current?.blur();
+      blurInput();
     }
   };
 
@@ -144,10 +149,10 @@ export function SidebarSearch() {
   return (
     <div ref={containerRef} className="relative">
       {/* Input */}
-      <div className="flex h-10 items-center gap-2 rounded-lg border border-border/20 bg-background/50 px-3">
-        <BiSearch size={24} className="shrink-0 text-muted-foreground" />
-        <input
-          ref={inputRef}
+      <div className="relative">
+        <BiSearch size={16} className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-muted-foreground" />
+        <Input
+          id="sidebar-search-input"
           type="text"
           value={query}
           onChange={(e) => {
@@ -157,18 +162,18 @@ export function SidebarSearch() {
           onFocus={() => query && setOpen(true)}
           onKeyDown={handleKeyDown}
           placeholder="Search..."
-          className="h-full w-full bg-transparent font-sans text-xs text-foreground placeholder:text-muted-foreground outline-none"
+          className="pl-8 pr-8 text-xs"
         />
         {query && (
           <button
             onClick={() => {
               setQuery("");
               setOpen(false);
-              inputRef.current?.focus();
+              focusInput();
             }}
-            className="shrink-0 text-muted-foreground hover:text-foreground"
+            className="absolute top-1/2 right-3 -translate-y-1/2 text-muted-foreground hover:text-foreground"
           >
-            <BiX size={24} />
+            <BiX size={16} />
           </button>
         )}
       </div>

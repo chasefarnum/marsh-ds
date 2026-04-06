@@ -31,7 +31,7 @@ export default function ScrollAreaPage() {
       <SectionTitle>Item Collection</SectionTitle>
       <Preview>
         <ScrollArea className="h-72 rounded border border-border p-4">
-          <h4 className="mb-4 text-sm font-semibold uppercase tracking-widest text-foreground">All Items</h4>
+          <h4 className="mb-4 text-2xl">All Items</h4>
           {items.map((item) => (
             <div key={item.name} className="border-b border-border py-3 last:border-0">
               <div className="flex items-center justify-between">

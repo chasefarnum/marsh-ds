@@ -30,7 +30,7 @@ export function GlobalFooter({ className }: { className?: string }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.svg"
-              alt="[Brand Name]"
+              alt="Marsh"
               width={155}
               height={27}
               className="dark:invert"
@@ -79,7 +79,7 @@ export function GlobalFooter({ className }: { className?: string }) {
 
         {/* ── Copyright ────────────────────────────────── */}
         <p className="text-xs font-sans text-muted-foreground">
-          © [YEAR] [Brand Name]. All rights reserved.
+          © [YEAR] Marsh. All rights reserved.
         </p>
 
       </div>

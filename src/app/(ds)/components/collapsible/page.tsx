@@ -12,6 +12,7 @@ import {
   CollapsibleContent,
 } from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 
 export default function CollapsiblePage() {
   const [open, setOpen] = useState(false);
@@ -27,9 +28,7 @@ export default function CollapsiblePage() {
       <Preview>
         <Collapsible open={open} onOpenChange={setOpen}>
           <div className="flex items-center justify-between">
-            <h4 className="text-sm font-medium">
-              Group A ({open ? "showing all" : "3 hidden"})
-            </h4>
+            <Label>Group A ({open ? "showing all" : "3 hidden"})</Label>
             <CollapsibleTrigger render={<Button variant="ghost" />}>
               {open ? "Show Less" : "Show All"}
             </CollapsibleTrigger>

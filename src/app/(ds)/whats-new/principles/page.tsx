@@ -53,7 +53,7 @@ export default function PrinciplesPage() {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-stretch">
         {principles.map((p) => (
-          <div key={p.title} className="flex flex-col rounded-lg border border-border/40 p-6">
+          <div key={p.title} className="flex flex-col rounded border border-border bg-card p-6">
             <h2 className="font-sans text-2xl font-medium text-foreground mb-4">{p.title}</h2>
             <p className="font-sans text-base leading-relaxed text-foreground/80 flex-1">
               {p.body}

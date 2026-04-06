@@ -31,7 +31,7 @@ export default function PopoverPage() {
           <PopoverContent className="w-80">
             <div className="grid gap-4">
               <div className="space-y-2">
-                <h4 className="font-semibold uppercase tracking-widest leading-none">Quick Entry</h4>
+                <h4 className="text-2xl">Quick Entry</h4>
                 <p className="text-sm text-muted-foreground">
                   Fill in the fields below to submit.
                 </p>
@@ -66,7 +66,7 @@ export default function PopoverPage() {
           </PopoverTrigger>
           <PopoverContent className="w-72">
             <div className="grid gap-4">
-              <h4 className="font-semibold uppercase tracking-widest leading-none">Filter Options</h4>
+              <h4 className="text-2xl">Filter Options</h4>
               <div className="space-y-2">
                 <Label htmlFor="pop-category">Category</Label>
                 <Input id="pop-category" placeholder="e.g. Type A, Type B" />

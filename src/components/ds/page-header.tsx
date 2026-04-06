@@ -30,7 +30,7 @@ export function SectionBreak() {
 
 export function Preview({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={`w-full rounded-sm border border-border/40 bg-background p-8 ${className ?? ""}`}>
+    <div className={`w-full rounded-sm border border-border bg-card p-8 ${className ?? ""}`}>
       {children}
     </div>
   );

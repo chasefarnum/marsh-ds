@@ -186,18 +186,18 @@ const ICONS: IconEntry[] = [
   { name: "Receipt", component: BiReceipt, category: "Commerce" },
   { name: "Crown", component: BiCrown, category: "Commerce" },
 
-  // [Brand Name]
-  { name: "Restaurant", component: BiRestaurant, category: "[Brand Name]" },
-  { name: "Heart", component: BiHeart, category: "[Brand Name]" },
-  { name: "Map", component: BiMap, category: "[Brand Name]" },
-  { name: "Calendar", component: BiCalendar, category: "[Brand Name]" },
-  { name: "CalendarAlt", component: BiCalendarAlt, category: "[Brand Name]" },
-  { name: "Time", component: BiTime, category: "[Brand Name]" },
-  { name: "Timer", component: BiTimer, category: "[Brand Name]" },
-  { name: "Camera", component: BiCamera, category: "[Brand Name]" },
-  { name: "Globe", component: BiGlobe, category: "[Brand Name]" },
-  { name: "BarChart", component: BiBarChartAlt2, category: "[Brand Name]" },
-  { name: "LineChart", component: BiLineChart, category: "[Brand Name]" },
+  // Marsh
+  { name: "Restaurant", component: BiRestaurant, category: "Marsh" },
+  { name: "Heart", component: BiHeart, category: "Marsh" },
+  { name: "Map", component: BiMap, category: "Marsh" },
+  { name: "Calendar", component: BiCalendar, category: "Marsh" },
+  { name: "CalendarAlt", component: BiCalendarAlt, category: "Marsh" },
+  { name: "Time", component: BiTime, category: "Marsh" },
+  { name: "Timer", component: BiTimer, category: "Marsh" },
+  { name: "Camera", component: BiCamera, category: "Marsh" },
+  { name: "Globe", component: BiGlobe, category: "Marsh" },
+  { name: "BarChart", component: BiBarChartAlt2, category: "Marsh" },
+  { name: "LineChart", component: BiLineChart, category: "Marsh" },
 
   // Security
   { name: "Lock", component: BiLock, category: "Security" },
@@ -260,7 +260,7 @@ export default function IconsPage() {
     <>
       <PageHeader
         title="Icons"
-        description="Boxicons (Regular) used across the [Brand Name] design system. Click any icon to copy its SVG."
+        description="Boxicons (Regular) used across the Marsh design system. Click any icon to copy its SVG."
       />
 
       <div className="mb-8 flex gap-3">

@@ -35,7 +35,7 @@ export default function HoverCardPage() {
                   <AvatarFallback>AM</AvatarFallback>
                 </Avatar>
                 <div className="space-y-1">
-                  <h4 className="text-sm font-semibold uppercase tracking-widest">Alex Morgan</h4>
+                  <h4 className="text-2xl">Alex Morgan</h4>
                   <p className="text-xs text-muted-foreground">
                     Senior contributor with expertise in design systems and component architecture.
                     10+ years of experience.
@@ -62,7 +62,7 @@ export default function HoverCardPage() {
                 </HoverCardTrigger>
                 <HoverCardContent className="w-72">
                   <div className="space-y-2">
-                    <h4 className="text-sm font-semibold uppercase tracking-widest">{item}</h4>
+                    <h4 className="text-2xl">{item}</h4>
                     <p className="text-xs text-muted-foreground">
                       A featured item sourced directly from trusted partners.
                       Available while supplies last.
