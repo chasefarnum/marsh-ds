@@ -8,7 +8,7 @@ export default function HomePage() {
           <span className="font-light">Marsh design system</span>
         </h1>
         <p className="mt-4 font-serif text-xl text-muted-foreground">
-          [System Name] provides the components and tools that help teams work
+          Marsh provides the components and tools that help teams work
           more efficiently and bring greater consistency to Marsh&rsquo;s
           digital presence.
         </p>

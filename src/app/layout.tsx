@@ -19,7 +19,7 @@ const notoSansMono = Noto_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "[System Name] — Design System",
+  title: "Marsh — Design System",
   description: "Design system documentation for Marsh.",
 };
 
