@@ -31,12 +31,20 @@ export function DSLayout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center justify-between">
             <a href="/">
               <Image
-                src="/ct-ds-logo.svg"
-                alt="[System Name]"
+                src="/marsh-logo-midnight.svg"
+                alt="Marsh"
                 width={180}
-                height={44}
+                height={40}
                 priority
-                className="dark:invert-0 invert"
+                className="block dark:hidden"
+              />
+              <Image
+                src="/marsh-logo-white.svg"
+                alt="Marsh"
+                width={180}
+                height={40}
+                priority
+                className="hidden dark:block"
               />
             </a>
             {/* Close button on mobile */}
