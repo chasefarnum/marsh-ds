@@ -20,8 +20,7 @@ export default function BadgePage() {
           <Badge variant="secondary">Seasonal</Badge>
           <Badge variant="outline">Featured</Badge>
           <Badge variant="destructive">Unavailable</Badge>
-          <Badge variant="ghost">Draft</Badge>
-          <Badge variant="link">View All</Badge>
+          <Badge variant="outline">Draft</Badge>
         </div>
       </Preview>
     </>
